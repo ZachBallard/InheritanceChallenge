@@ -15,6 +15,11 @@ namespace InheritanceChallenge
         public string Model { get; set; }
         public int NumOfGears { get; set; } = 4;
         public int NumOfTires { get; set; } = 4;
+
+        public override string ToString()
+        {
+            return $"This is a {Make} {Model}";
+        }
     }
 
     [TestClass]
